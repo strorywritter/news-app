@@ -87,9 +87,8 @@ const ResponsiveAppBar = (props) => {
               textDecoration: "none",
             }}
           >
-            LOGO
           </Typography>
-          {/* <img  src='logo.png' alt="Girl in a jacket" width="30" height="30" >{logo}</img> */}
+          <img src={process.env.PUBLIC_URL + '/logo.png'} width="100" height="100" />
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
