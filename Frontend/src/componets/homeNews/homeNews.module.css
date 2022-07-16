@@ -1,0 +1,11 @@
+.gridContainer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: rgb(197, 188, 190);
+    width: full;
+  }
+  
+  .gridItem {
+    padding: 20px;
+    text-align: center;
+  }

@@ -1,0 +1,394 @@
+{
+	"info": {
+		"_postman_id": "82f164f6-2e28-49a5-8e7f-0a76352e8d94",
+		"name": "newsWeb",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20523177"
+	},
+	"item": [
+		{
+			"name": "news",
+			"item": [
+				{
+					"name": "getNewses",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/news/getNewses",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"news",
+								"getNewses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getNewsById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/news/getNewsById?newsId=f271f136-7455-4671-babc-be2d961e9bb9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"news",
+								"getNewsById"
+							],
+							"query": [
+								{
+									"key": "newsId",
+									"value": "f271f136-7455-4671-babc-be2d961e9bb9"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getHeadlines",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/news/getHeadlines",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"news",
+								"getHeadlines"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getHeadlineById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/news/getHeadlineById?headlineId=9ffc808f-5946-407f-ad1b-e327774829c5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"news",
+								"getHeadlineById"
+							],
+							"query": [
+								{
+									"key": "headlineId",
+									"value": "9ffc808f-5946-407f-ad1b-e327774829c5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getTopStories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/news/getTopStories",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"news",
+								"getTopStories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCategories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/news/getCategories",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"news",
+								"getCategories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getNewsByCategory",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"nramyashan@gmail.com\",\r\n    \"password\":123456\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/news/getNewsByCategory?category=political",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"news",
+								"getNewsByCategory"
+							],
+							"query": [
+								{
+									"key": "category",
+									"value": "political"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "addUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Nadeesha Ramyashan\",\r\n    \"email\":\"nadeesha@gmail.com\",\r\n    \"userRole\":\"admin\",\r\n    \"password\":\"55555\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/user/addUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user",
+								"addUser"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "admin",
+			"item": [
+				{
+					"name": "addEditor",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/admin/addEditors?userId=ac258b45-46c7-4200-9535-c8b93ded0647",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"admin",
+								"addEditors"
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "ac258b45-46c7-4200-9535-c8b93ded0647"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "verifyAdmin",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/admin/verifyAdmin?userId=ac258b45-46c7-4200-9535-c8b93ded0647",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"admin",
+								"verifyAdmin"
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "ac258b45-46c7-4200-9535-c8b93ded0647"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addCategory",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/admin/addCategory?category=tech",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"admin",
+								"addCategory"
+							],
+							"query": [
+								{
+									"key": "category",
+									"value": "tech"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "editors",
+			"item": [
+				{
+					"name": "editNews",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"newsId\":\"f271f136-7455-4671-babc-be2d961e9bb9\",\r\n    \"news\":\"nadeesha@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/editors/editNews",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"editors",
+								"editNews"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "editHeadline",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"newsId\":\"f271f136-7455-4671-babc-be2d961e9bb9\",\r\n    \"headLine\":\"new headline\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/editors/editHeadline",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"editors",
+								"editHeadline"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addNews",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"headline\":\"ppppppp\",\r\n    \"news\":\"news news news\",\r\n    \"category\":\"sports\",\r\n    \"topStories\":\"false\",\r\n    \"userId\":\"ea8b0041-485e-48a6-afbf-caf802d01c37\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/editors/addNews",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"editors",
+								"addNews"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
